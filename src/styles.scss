@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lekton&family=Parisienne&family=Saira+Semi+Condensed:wght@300&display=swap');
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 200px;
+    color: #fff;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    h1 {
+        font-family: 'Parisienne', cursive;
+        margin: 0;
+        font-size: 100px;
+    }
+
+    .add {
+        font-size: 100px;
+        position: relative;
+        bottom: 40px;
+        margin: 0 10px;
+        transition: all 0.1s;
+        cursor: pointer;
+    }
+
+    .add:hover {
+        font-size: 110px;
+        bottom: 30px;
+    }
+}
+
+.index-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+.wine-shelf {
+    display: flex;
+    justify-content: center;
+    background-image: url('https://i.imgur.com/kh3AHT7.png');
+    height: 300px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 550px;
+
+    .wine {
+        position: relative;
+        bottom: -40px;
+        margin: 0 -10px;
+        cursor: pointer;
+        img {
+            height: 120px;
+            transition: height 0.1s;
+        }
+        img:hover {
+            height: 135px
+        }
+    }
+}
+
+@mixin glow-box {
+    box-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 40px #ff4da6;
+    border: solid #ff4da6 1px;
+}
+
+.wine-form {
+    @include glow-box;
+    background: rgba(17, 40, 53, 0.714);
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-family: 'Parisienne', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+        margin: 8px 0;
+        border-radius: 5px;
+        font-size: 24px;
+        background: rgba(17, 40, 53, 0.714);
+        color: white;
+    }
+
+    button {
+        font-size: 24px;
+    }
+}
+
+.wine-show {
+    display: flex;
+    justify-content: center;
+    @include glow-box;
+    background: rgba(17, 40, 53, 0.714);
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-family: 'Parisienne', cursive;
+
+    .info {
+        max-width: 250px;
+    }
+
+    h1 {
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    h2 {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    img {
+        height: 200px;
+    }
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.selected {
+    height: 135px !important;
+}
