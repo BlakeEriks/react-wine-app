@@ -9,7 +9,7 @@ const Main = () => {
     const [mode, setMode] = useState('create')
     const [selectedWine, setSelectedWine] = useState(0)
 
-    const URL = 'http://localhost:4000/wines/'
+    const URL = 'https://express-react-wine.herokuapp.com/wines'
 
     const getWines = async () => {
         const response = await fetch(URL)
