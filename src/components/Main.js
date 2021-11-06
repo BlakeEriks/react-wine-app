@@ -7,7 +7,7 @@ const Main = () => {
 
     const [wines, setWines] = useState(null)
     const [mode, setMode] = useState('create')
-    const [selectedWine, setSelectedWine] = useState(0)
+    const [selectedWine, setSelectedWine] = useState(null)
 
     const URL = 'https://express-react-wine.herokuapp.com/wines'
 
