@@ -4,7 +4,7 @@ const Index = ({wines, setMode, selectedWine, setSelectedWine}) => {
         return wines.map( (wine, index) => 
             <div key={wine._id} className='wine' 
                 onClick={() => {setSelectedWine(index); setMode('show')}}>
-                <img className={selectedWine === index && 'selected' } src={wine.image} alt={wine.image} />
+                <img className={selectedWine === index ? 'selected' : '' } src={wine.image} alt={wine.image} />
             </div>
         )
     }
