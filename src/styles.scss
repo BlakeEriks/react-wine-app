@@ -72,30 +72,6 @@
     border: solid #ff4da6 1px;
 }
 
-.wine-form {
-    @include glow-box;
-    background: rgba(17, 40, 53, 0.714);
-    border-radius: 10px;
-    padding: 15px;
-    color: white;
-    font-family: 'Parisienne', cursive;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    input {
-        margin: 8px 0;
-        border-radius: 5px;
-        font-size: 24px;
-        background: rgba(17, 40, 53, 0.714);
-        color: white;
-    }
-
-    button {
-        font-size: 24px;
-    }
-}
-
 .wine-show {
     display: flex;
     justify-content: center;
@@ -107,21 +83,73 @@
     font-family: 'Parisienne', cursive;
 
     .info {
-        max-width: 250px;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .display {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            height: 200px;
+            padding: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            font-family: 'Parisienne', cursive;
+            cursor: pointer;
+            font-weight: 800;
+            background: none;
+            color: #ff4da6;
+        }
     }
 
     h1 {
+        input {
+            font-size: inherit;
+            margin-bottom: 5px;
+        }
         margin-bottom: 0;
         margin-top: 5px;
     }
 
     h2 {
+        input {
+            font-size: inherit;
+        }
         margin-top: 0;
+        margin-bottom: 5px;
         text-align: left;
     }
 
-    img {
-        height: 200px;
+    textarea {
+        color: white;
+        background: none;
+        border: 1px solid white;
+        resize: none;
+        height: fit-content;
+        box-sizing: border-box;
+        height: 72px;
+    }
+
+    input {
+        width: 100%;
+        background: none;
+        border: 1px solid white;
+        box-sizing: border-box;
+        color: white;
+        border-radius: 10px;
+        font-family: 'Parisienne', cursive;
+    }
+
+    button {
+        cursor: pointer;
     }
 }
 
