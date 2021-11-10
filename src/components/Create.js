@@ -18,12 +18,20 @@ const Create = ({createWine}) => {
 
     return (
         <div className='content-container'>
-            <form onSubmit={handleSubmit} className="wine-form">
-                <input type="text" value={form.name} name="name" placeholder="Name" onChange={handleChange} />
-                <input type="text" value={form.image} name="image" placeholder="Image" onChange={handleChange} />
-                <input type="text" value={form.countryOfOrigin} name="countryOfOrigin" placeholder="Country of Origin" onChange={handleChange} />
-                <input type="text" value={form.description} name="description" placeholder="Description" onChange={handleChange} />
-                <button type="submit" >Add Wine</button>
+            <form onSubmit={handleSubmit} className="wine-show">
+                <div className="info">
+                    <h1>
+                        <input type="text" value={form.name} name="name" placeholder="Name" onChange={handleChange} />
+                    </h1>
+                    <h2>
+                        <input type="text" value={form.countryOfOrigin} name="countryOfOrigin" placeholder="Country of Origin" onChange={handleChange} />
+                    </h2>
+                    <textarea type="text" value={form.description} name="description" placeholder="Description" onChange={handleChange} />
+                    <p>
+                        <input type="text" value={form.image} name="image" placeholder="Image" onChange={handleChange} />
+                    </p>
+                    <button type="submit" >Add Wine</button>
+                </div>
             </form>
         </div>
     )
